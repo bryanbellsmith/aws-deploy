@@ -29,7 +29,7 @@ resource "aws_instance" "controller" {
   key_name = "${var.ssh_key_name}"
 
   connection {
-    private_key = "${file("..\\home.pem")}"
+    private_key = "${file("..\\..\\home.pem")}"
     user = "ec2-user"
     agent = false
   }
